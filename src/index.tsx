@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import HomeIndex from './scenes/Home/HomeIndex';
+import Home from './scenes/Home/HomeIndex';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HomeIndex />
+    <Home />
   </React.StrictMode>,
   document.getElementById('root')
 );

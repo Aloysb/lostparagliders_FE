@@ -2,7 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+//Components
+import Button from '../../components/Button';
+
+const Home = () => {
   return (
     <div className='App'>
       <header className='App-header'>
@@ -12,10 +15,10 @@ function App() {
           A website to find out if the paragliding equipment you are buying has
           been stolen or not!
         </h2>
-        <button></button>
+        <Button title='first' />
       </header>
     </div>
   );
-}
+};
 
-export default App;
+export default Home;
