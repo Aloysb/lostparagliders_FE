@@ -1,21 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledButton = styled.button`
-  color: red;
+interface StyledButton {
+  bgColor?: string;
+}
+
+const Button = styled.button<StyledButton>`
   font-size: 1em;
   margin: 1em;
   padding: 0.25em 1em;
-  border: 2px solid palevioletred;
+  box-shadow: box-shadow;
   border-radius: 3px;
+  color: ${(props) => props.bgColor};
 `;
 
 interface ButtonProps {
-  title: string;
+  title?: string;
+  bgColor?: string;
 }
 
-const Button = (props: ButtonProps) => {
-  return <StyledButton>{props.title}</StyledButton>;
+export const StyledButton = (props: ButtonProps) => {
+  return <Button bgColor={props.bgColor}>{props.title}</Button>;
 };
 
-export default Button;
+export default StyledButton;

@@ -15,7 +15,7 @@ const Home = () => {
           A website to find out if the paragliding equipment you are buying has
           been stolen or not!
         </h2>
-        <Button title='first' />
+        <Button title='first' bgColor='red' />
       </header>
     </div>
   );
