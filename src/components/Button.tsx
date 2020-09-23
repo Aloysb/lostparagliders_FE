@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import tw from 'tailwind.macro';
 
 //Interface for the styled component.
-
 interface StyledButton {
   variant?: string;
 }
@@ -28,17 +27,21 @@ const StyledButton = styled.button<StyledButton>`
   `};
 `;
 
+//TS type definition for the props.
 interface ButtonProps {
   title?: string;
   variant?: string;
 }
 
+// Component itself
 export const Button = (props: ButtonProps) => {
   return <StyledButton variant={props.variant}>{props.title}</StyledButton>;
 };
 
+// Default props for the component
 Button.defaultProps = {
   title: 'Button',
+  variant: 'Primary',
 };
 
 export default Button;
