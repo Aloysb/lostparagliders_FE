@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import tw from 'tailwind.macro';
 
 interface StyledButton {
   bgColor?: string;
@@ -11,6 +12,10 @@ const Button = styled.button<StyledButton>`
   padding: 0.25em 1em;
   box-shadow: box-shadow;
   border-radius: 3px;
+  ${tw`px-64
+  shadow
+  font-mono
+  `}
   color: ${(props) => props.bgColor};
 `;
 
