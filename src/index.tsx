@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
 //Tailwind's classNames
@@ -8,13 +9,23 @@ import './style/tailwind/tailwind.output.css';
 //Global style for styled components.
 import GlobalStyle from './style/styled_components/globalStyle';
 
-//Components
-import Home from './scenes/Home/HomeIndex';
+//Import scenes
+import LandingPage from './scenes/LandingPage/LandingPage';
+import Search from './scenes/Search/SearchIndex';
 
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyle />
-    <Home />
+    <Router>
+      <Switch>
+        <Route path='/'>
+          <LandingPage />
+        </Route>
+        <Route path='/search'>
+          <Search />
+        </Route>
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

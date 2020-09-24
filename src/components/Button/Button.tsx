@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { useHistory } from 'react-router-dom';
+
 //This is necessary to use tailwind with Styled components.
 import tw from 'tailwind.macro';
 //Spinners
@@ -22,7 +24,7 @@ const StyledButton = styled.button<ButtonProps>`
   border: none;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06),
     0 1px 2px 0 ${(props) => `var(--${props.variant})`};
-  transition: 0.3s all ease-in-out;
+  transition: 0.3s all linear;
 
   ${tw`
   uppercase
@@ -63,6 +65,7 @@ const StyledButton = styled.button<ButtonProps>`
 interface ButtonProps {
   title?: string;
   variant?: string;
+  path?: string;
 }
 
 // Component
@@ -70,7 +73,13 @@ export const Button = (props: ButtonProps) => {
   //Hook for loading state
   const [loading, setLoading] = useState(false);
 
-  const displayLoadingSpinner = () => setLoading(true);
+  //Hook for navigation
+  let history = useHistory();
+
+  const displayLoadingSpinner = () => {
+    setLoading(true);
+    if (props.path !== '') history.push(`${props.path}`);
+  };
 
   return (
     <StyledButton variant={props.variant} onClick={displayLoadingSpinner}>
@@ -83,6 +92,7 @@ export const Button = (props: ButtonProps) => {
 Button.defaultProps = {
   title: 'Button',
   variant: 'Primary',
+  path: '',
 };
 
 export default Button;

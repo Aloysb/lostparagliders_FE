@@ -4,7 +4,7 @@ import React from 'react';
 import Button from '../../components/Button/Button';
 import SearchInput from '../../components/SearchInput/SearchInput';
 
-const LookUp = () => {
+const Search = () => {
   return (
     <div>
       <SearchInput />
@@ -12,3 +12,5 @@ const LookUp = () => {
     </div>
   );
 };
+
+export default Search;

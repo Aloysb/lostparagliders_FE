@@ -5,7 +5,7 @@ import Button from '../../components/Button/Button';
 
 import Logo from '../../assets/logo/Logo.png';
 
-const Home = () => {
+const LandingPage = () => {
   return (
     <div className='flex justify-center items-center w-screen h-screen'>
       <div className='w-4/5'>
@@ -18,12 +18,20 @@ const Home = () => {
           been stolen or not!
         </h3>
         <div className='flex flex-col justify-stretch w-3/4 mx-auto'>
-          <Button title="I'm buying equipment" variant='warning' />
-          <Button title='My equipment has been stolen' variant='info' />
+          <Button
+            title="I'm buying equipment"
+            variant='warning'
+            path='/search'
+          />
+          <Button
+            title='My equipment has been stolen'
+            variant='info'
+            path='/register'
+          />
         </div>
       </div>
     </div>
   );
 };
 
-export default Home;
+export default LandingPage;
