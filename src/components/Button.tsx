@@ -10,18 +10,21 @@ const StyledButton = styled.button<ButtonProps>`
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 3rem;
+
   font-size: 1rem;
-  color: white;
-  background-color: ${(props) => `var(--${props.variant})`};
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06),
-    0 1px 2px 0 ${(props) => `var(--${props.variant})`};
-  border: none;
   letter-spacing: 0.1rem;
   font-variant: small-caps;
   font-weight: 600;
+
+  color: white;
+  background-color: ${(props) => `var(--${props.variant})`};
   cursor: pointer;
+  border: none;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06),
+    0 1px 2px 0 ${(props) => `var(--${props.variant})`};
   transition: 0.3s all ease-in-out;
-  min-height: 3rem;
+
   ${tw`
   lowercase
   px-8
@@ -33,6 +36,13 @@ const StyledButton = styled.button<ButtonProps>`
   &:hover {
     transform: scale(1.01);
     opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 1;
+    outline: none;
+    animation-name: click-animation;
+    animation-duration: 1s;
   }
 
   @keyframes click-animation {
@@ -48,13 +58,6 @@ const StyledButton = styled.button<ButtonProps>`
         0 1px 2px 0 ${(props) => `var(--${props.variant})`};
     }
   }
-
-  &:focus {
-    opacity: 1;
-    outline: none;
-    animation-name: click-animation;
-    animation-duration: 1s;
-  }
 `;
 
 //TS type definition for the props.
@@ -63,8 +66,9 @@ interface ButtonProps {
   variant?: string;
 }
 
-// Component itself
+// Component
 export const Button = (props: ButtonProps) => {
+  //Hook for loading state
   const [loading, setLoading] = useState(false);
 
   const displayLoadingSpinner = () => setLoading(true);
