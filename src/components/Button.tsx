@@ -3,19 +3,14 @@ import styled from 'styled-components';
 //This is necessary to use tailwind with Styled components.
 import tw from 'tailwind.macro';
 
-//Interface for the styled component.
-interface StyledButton {
-  variant?: string;
-}
-
 //Styled component.
-const StyledButton = styled.button<StyledButton>`
+const StyledButton = styled.button<ButtonProps>`
   @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   font-family: mulish;
   background: ${(props) => props.variant};
   color: white;
   background-color: ${(props) =>
-    props.variant === 'primary' ? 'purple' : 'red'};
+    props.variant === 'primary' ? 'var(--success)' : 'red'};
   letter-spacing: 120%;
   border: none;
   ${tw`
