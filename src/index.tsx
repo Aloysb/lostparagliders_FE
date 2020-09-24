@@ -1,11 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './tailwind.output.css';
-import Home from './scenes/Home/HomeIndex';
 import * as serviceWorker from './serviceWorker';
+
+//Tailwind's classNames
+import './style/tailwind/tailwind.output.css';
+
+//Global style for styled components.
+import GlobalStyle from './style/styled_components/globalStyle';
+
+//Components
+import Home from './scenes/Home/HomeIndex';
 
 ReactDOM.render(
   <React.StrictMode>
+    <GlobalStyle />
     <Home />
   </React.StrictMode>,
   document.getElementById('root')
