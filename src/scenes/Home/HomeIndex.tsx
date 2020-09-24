@@ -1,7 +1,7 @@
 import React from 'react';
 
 //Components
-import Button from '../../components/Button';
+import Button from '../../components/Button/Button';
 
 import Logo from '../../assets/logo/Logo.png';
 
