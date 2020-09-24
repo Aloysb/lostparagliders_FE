@@ -14,10 +14,9 @@ const StyledButton = styled.button<ButtonProps>`
 
   font-size: 1rem;
   letter-spacing: 0.1rem;
-  font-variant: small-caps;
   font-weight: 600;
 
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   background-color: ${(props) => `var(--${props.variant})`};
   cursor: pointer;
   border: none;
@@ -26,7 +25,7 @@ const StyledButton = styled.button<ButtonProps>`
   transition: 0.3s all ease-in-out;
 
   ${tw`
-  lowercase
+  uppercase
   px-8
   rounded
   my-2
