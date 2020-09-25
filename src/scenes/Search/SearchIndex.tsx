@@ -1,6 +1,6 @@
 import React from 'react';
 
-//Container
+//Containers
 import CenterContainer from '../../components/CenterContainer/CenterContainer';
 
 //Components
