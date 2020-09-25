@@ -16,8 +16,12 @@ const Search = () => {
       <h3 className='text-center my-3'>
         Enter the serial number below to find out!
       </h3>
-      <SearchInput />
-      <Button variant='warning' title='Search' />
+      <div className='flex flex-col content-center py-3 my-3'>
+        <SearchInput />
+        <div className='self-center my-3'>
+          <Button variant='warning' title='Search' />
+        </div>
+      </div>
     </CenterContainer>
   );
 };
