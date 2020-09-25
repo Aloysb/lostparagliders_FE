@@ -18,7 +18,7 @@ ReactDOM.render(
     <GlobalStyle />
     <Router>
       <Switch>
-        <Route path='/'>
+        <Route exact path='/'>
           <LandingPage />
         </Route>
         <Route path='/search'>
