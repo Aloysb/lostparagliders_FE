@@ -24,10 +24,10 @@ ReactDOM.render(
     <GlobalStyle />
     <Router>
       <AnimatedSwitch
-        atEnter={{ opacity: 0 }}
-        atLeave={{ opacity: 0 }}
-        atActive={{ opacity: 1 }}
-        className='switch-wrapper'
+      // atEnter={{ opacity: 0 }}
+      // atLeave={{ opacity: 0 }}
+      // atActive={{ opacity: 1 }}
+      // className='switch-wrapper'
       >
         <Route exact path='/'>
           <LandingPage />
