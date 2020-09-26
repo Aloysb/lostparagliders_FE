@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     --main: #d9e2ec;
     --main-light-1: #F0f4f8;
     --main-light-2: #f1f1f1;
+    --border-radius: 0.25rem;
     font-size: 16px;
   }
   body {
