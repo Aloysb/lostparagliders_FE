@@ -66,6 +66,7 @@ interface ButtonProps {
   title?: string;
   variant?: string;
   path?: string;
+  action?: any;
 }
 
 // Component
@@ -76,13 +77,20 @@ export const Button = (props: ButtonProps) => {
   //Hook for navigation
   let history = useHistory();
 
+  const handleClick = () => {
+    displayLoadingSpinner();
+    //If route, go to this route.
+    if (props.path !== '') history.push(`${props.path}`);
+    //If action, perform action.
+    if (props.action) props.action();
+  };
+
   const displayLoadingSpinner = () => {
     setLoading(true);
-    if (props.path !== '') history.push(`${props.path}`);
   };
 
   return (
-    <StyledButton variant={props.variant} onClick={displayLoadingSpinner}>
+    <StyledButton variant={props.variant} onClick={handleClick}>
       {loading ? <Ellipsis size={30} color='#fff' /> : props.title}
     </StyledButton>
   );
@@ -93,6 +101,7 @@ Button.defaultProps = {
   title: 'Button',
   variant: 'Primary',
   path: '',
+  action: '',
 };
 
 export default Button;
