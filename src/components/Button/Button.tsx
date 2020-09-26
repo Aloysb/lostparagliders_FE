@@ -30,6 +30,7 @@ const StyledButton = styled.button<ButtonProps>`
   rounded
   my-2
   mx-2
+  py-2
   `};
 
   &:hover {
