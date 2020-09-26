@@ -18,6 +18,7 @@ import GlobalStyle from './style/styled_components/globalStyle';
 //Import scenes
 import LandingPage from './scenes/LandingPage/LandingPage';
 import Search from './scenes/Search/SearchIndex';
+import RegisterStolenGear from './scenes/RegisterStolenGear/RegisterStolenGear';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -34,6 +35,9 @@ ReactDOM.render(
         </Route>
         <Route path='/search'>
           <Search />
+        </Route>
+        <Route path='/register'>
+          <RegisterStolenGear />
         </Route>
       </AnimatedSwitch>
     </Router>
