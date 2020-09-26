@@ -102,7 +102,7 @@ const Search = () => {
           <h3>{searchValue}</h3>
         </div>
         <div className='flex justify-center align-center my-4 mx-auto'>
-          <Ring size={200} color='#88E2DE' />
+          <Ring size={200} color='#02C19D' />
         </div>
       </CenterContainer>
     );
