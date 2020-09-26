@@ -71,7 +71,7 @@ const Search = () => {
         </h1>
         {/* If no input, display message to user. Reset on input change. */}
         <h3
-          className={`text-center my-3 ${
+          className={`text-center mb-3 ${
             errorMessage ? 'text-red-600 animate-bounce' : ''
           }`}
         >
@@ -96,11 +96,13 @@ const Search = () => {
     return (
       <CenterContainer>
         <div className='flex flex-col justify-center items-center'>
-          <h2>We are checking if any entry match your request</h2>
+          <h2 className=' my-3 text-center'>
+            We are checking if any entry match your request.
+          </h2>
           <h3>{searchValue}</h3>
         </div>
         <div className='flex justify-center align-center my-4 mx-auto'>
-          <Ring size={300} color='#88E2DE' />
+          <Ring size={200} color='#88E2DE' />
         </div>
       </CenterContainer>
     );

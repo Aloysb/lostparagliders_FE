@@ -33,11 +33,13 @@ const GlobalStyle = createGlobalStyle`
   h1{
     color: var(--main-light-1);
     font-size: calc(1rem * 4 / 3 * 3);
+    line-height: 115%;
   }
 
   h2{
     color: var(--main);
     font-size: calc(1rem * 4 / 3 * 2);
+    line-height: 120%;
   }
 
   h3{
