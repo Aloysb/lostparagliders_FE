@@ -9,6 +9,7 @@ const StyleInput = styled.input`
   flex-grow: 1;
   border-radius: var(--border-radius);
   caret-color: var(--warning);
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
 `;
 
 const SearchInput = () => {
