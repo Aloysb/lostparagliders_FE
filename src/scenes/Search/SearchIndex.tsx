@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
+
+//Spinners
+import { Ring } from 'react-spinners-css';
 
 //Containers
 import CenterContainer from '../../components/CenterContainer/CenterContainer';
@@ -15,13 +18,13 @@ const Search = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   // Remove non alphanumeric characters
-  const slugify = (value: string) => {
-    return value.replace(/\W/gi, '').toLowerCase();
-  };
+  // const slugify = (value: string) => {
+  //   return value.replace(/\W/gi, '').toLowerCase();
+  // };
 
   const searchValueChange = (e: React.FormEvent<HTMLInputElement>) => {
     //Get value of the input out of the event.
-    let searchValue = slugify(e.currentTarget.value);
+    let searchValue = e.currentTarget.value;
     //Set state to input value.
     changeSearchValue(searchValue);
     //Reset error message
@@ -29,7 +32,7 @@ const Search = () => {
   };
 
   // Set up navigation hook for react-router.
-  let history = useHistory();
+  // let history = useHistory();
 
   // Query the db.
   const queryDbWithInput = () => {
@@ -40,38 +43,70 @@ const Search = () => {
     } else {
       //If input, query the DB via API path.
       setIsLoading(true);
-      history.push(`/search/${searchValue}`);
+      //Remove non-alphanumeric character.
+      // let slugifiedSearchValue = slugify(searchValue);
+
+      ///////////////////////////////////////////////////////
+      ///// API CALL ////////////////////////////////////////
+      ///////////////////////////////////////////////////////
+
+      // props.history.push({
+      //   pathname: '/register',
+      //   state: data_you_need_to_pass
+      //  });
+
+      // if (match){
+      //   history.push('/match');
+      // } else {
+      //   history.push('/nomatch')
+      // }
     }
   };
 
-  return (
-    <CenterContainer>
-      <h1 className='display text-center my-5'>
-        Has this equipment been stolen?
-      </h1>
-      {/* If no input, display message to user. Reset on input change. */}
-      <h3
-        className={`text-center my-3 ${
-          errorMessage ? 'text-red-600 animate-bounce' : ''
-        }`}
-      >
-        {errorMessage === ''
-          ? 'Enter the serial number below to find out!'
-          : errorMessage}
-      </h3>
-      <div className='flex flex-col content-center py-3 my-3'>
-        <SearchInput handleChange={searchValueChange} />
-        <div className='self-center my-3'>
-          <Button
-            variant='warning'
-            title='Search'
-            isLoading={isLoading}
-            actionOnClick={queryDbWithInput}
-          />
+  if (!isLoading) {
+    return (
+      <CenterContainer>
+        <h1 className='display text-center my-5'>
+          Has this equipment been stolen?
+        </h1>
+        {/* If no input, display message to user. Reset on input change. */}
+        <h3
+          className={`text-center my-3 ${
+            errorMessage ? 'text-red-600 animate-bounce' : ''
+          }`}
+        >
+          {errorMessage === ''
+            ? 'Enter the serial number below to find out!'
+            : errorMessage}
+        </h3>
+        <div className='flex flex-col content-center py-3 my-3'>
+          <SearchInput handleChange={searchValueChange} />
+          <div className='self-center my-3'>
+            <Button
+              variant='warning'
+              title='Search'
+              isLoading={isLoading}
+              actionOnClick={queryDbWithInput}
+            />
+          </div>
         </div>
-      </div>
-    </CenterContainer>
-  );
+      </CenterContainer>
+    );
+  } else if (isLoading) {
+    return (
+      <CenterContainer>
+        <div className='flex flex-col justify-center items-center'>
+          <h2>We are checking if any entry match your request</h2>
+          <h3>{searchValue}</h3>
+        </div>
+        <div className='flex justify-center align-center my-4 mx-auto'>
+          <Ring size={300} color='#88E2DE' />
+        </div>
+      </CenterContainer>
+    );
+  } else {
+    return <></>;
+  }
 };
 
 export default Search;
