@@ -65,8 +65,8 @@ const StyledButton = styled.button<ButtonProps>`
 interface ButtonProps {
   title?: string;
   variant?: string;
-  path?: string;
-  action?: any;
+  goToRoute?: string;
+  actionOnClick?: any;
 }
 
 // Component
@@ -80,9 +80,9 @@ export const Button = (props: ButtonProps) => {
   const handleClick = () => {
     displayLoadingSpinner();
     //If route, go to this route.
-    if (props.path !== '') history.push(`${props.path}`);
+    if (props.goToRoute !== '') history.push(`${props.goToRoute}`);
     //If action, perform action.
-    if (props.action) props.action();
+    if (props.actionOnClick) props.actionOnClick();
   };
 
   const displayLoadingSpinner = () => {
@@ -100,8 +100,8 @@ export const Button = (props: ButtonProps) => {
 Button.defaultProps = {
   title: 'Button',
   variant: 'Primary',
-  path: '',
-  action: '',
+  goToRoute: '',
+  actionOnClick: '',
 };
 
 export default Button;

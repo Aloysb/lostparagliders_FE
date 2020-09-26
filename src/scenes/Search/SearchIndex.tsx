@@ -28,7 +28,7 @@ const Search = () => {
           <Button
             variant='warning'
             title='Search'
-            action={searchDatabaseWithInput}
+            actionOnClick={searchDatabaseWithInput}
           />
         </div>
       </div>

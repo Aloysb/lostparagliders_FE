@@ -17,11 +17,15 @@ const LandingPage = () => {
         been stolen or not!
       </h3>
       <div className='flex flex-col justify-stretch w-3/4 mx-auto'>
-        <Button title="I'm buying equipment" variant='warning' path='/search' />
+        <Button
+          title="I'm buying equipment"
+          variant='warning'
+          goToRoute='/search'
+        />
         <Button
           title='My equipment has been stolen'
           variant='info'
-          path='/register'
+          goToRoute='/register'
         />
       </div>
     </CenterContainer>
