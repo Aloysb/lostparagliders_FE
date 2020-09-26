@@ -9,7 +9,7 @@ interface ChildrenProps {
 
 const CenterContainer = (props: ChildrenProps) => {
   return (
-    <div className='flex justify-center items-center w-screen h-screen'>
+    <div className='flex justify-center items-center w-screen min-h-screen'>
       <div className='w-4/5'>
         <img className='h-40 mx-auto' alt='Website logo' src={Logo} />
         {props.children}

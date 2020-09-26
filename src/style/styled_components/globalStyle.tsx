@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
 
   .display{
     color: var(--main-light-1);
-    font-size: calc(1rem * 4 / 3 * 4);
+    /* font-size: calc(1rem * 4 / 3 * 4); */
     line-height: 110%;
     font-weight: 200;
     letter-spacing: -0.025em;
