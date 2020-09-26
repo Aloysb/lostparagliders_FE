@@ -1,7 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
+
+//React-router
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+//Router Transitions
+import { AnimatedSwitch } from 'react-router-transition';
+import './style/react_router_transition/animatedSwitch.css';
 
 //Tailwind's classNames
 import './style/tailwind/tailwind.output.css';
@@ -17,14 +23,19 @@ ReactDOM.render(
   <React.StrictMode>
     <GlobalStyle />
     <Router>
-      <Switch>
+      <AnimatedSwitch
+        atEnter={{ opacity: 0 }}
+        atLeave={{ opacity: 0 }}
+        atActive={{ opacity: 1 }}
+        className='switch-wrapper'
+      >
         <Route exact path='/'>
           <LandingPage />
         </Route>
         <Route path='/search'>
           <Search />
         </Route>
-      </Switch>
+      </AnimatedSwitch>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
