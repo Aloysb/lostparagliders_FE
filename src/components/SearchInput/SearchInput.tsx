@@ -12,8 +12,18 @@ const StyleInput = styled.input`
   box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
 `;
 
-const SearchInput = () => {
-  return <StyleInput type='text' placeholder='123-ABC-4D'></StyleInput>;
+interface searchInputProps {
+  handleChange?: any;
+}
+
+const SearchInput = (props: searchInputProps) => {
+  return (
+    <StyleInput
+      type='text'
+      placeholder='123-ABC-4D'
+      onChange={props.handleChange}
+    ></StyleInput>
+  );
 };
 
 export default SearchInput;

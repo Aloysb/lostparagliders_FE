@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
 
@@ -67,31 +67,24 @@ interface ButtonProps {
   variant?: string;
   goToRoute?: string;
   actionOnClick?: any;
+  isLoading?: boolean;
 }
 
 // Component
 export const Button = (props: ButtonProps) => {
-  //Hook for loading state
-  const [loading, setLoading] = useState(false);
-
   //Hook for navigation
   let history = useHistory();
 
   const handleClick = () => {
-    displayLoadingSpinner();
     //If route, go to this route.
     if (props.goToRoute !== '') history.push(`${props.goToRoute}`);
     //If action, perform action.
     if (props.actionOnClick) props.actionOnClick();
   };
 
-  const displayLoadingSpinner = () => {
-    setLoading(true);
-  };
-
   return (
     <StyledButton variant={props.variant} onClick={handleClick}>
-      {loading ? <Ellipsis size={30} color='#fff' /> : props.title}
+      {props.isLoading ? <Ellipsis size={30} color='#fff' /> : props.title}
     </StyledButton>
   );
 };
@@ -102,6 +95,7 @@ Button.defaultProps = {
   variant: 'Primary',
   goToRoute: '',
   actionOnClick: '',
+  isLoading: false,
 };
 
 export default Button;

@@ -14,6 +14,9 @@ export const Info: React.FC<{}> = () => <Button variant='info'></Button>;
 export const Disabled: React.FC<{}> = () => (
   <Button variant='disabled'></Button>
 );
+export const Loading: React.FC<{}> = () => (
+  <Button isLoading={true} variant='primary'></Button>
+);
 export const Example: React.FC<{}> = () => (
   <Button variant='warning' title="I'm buying equipment"></Button>
 );
