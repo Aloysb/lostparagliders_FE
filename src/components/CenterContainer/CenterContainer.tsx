@@ -5,11 +5,12 @@ import Logo from '../../assets/logo/Logo.png';
 import { Link, useLocation } from 'react-router-dom';
 
 //TS type definition for the props.
-interface ChildrenProps {
+interface CenterContainerProps {
   children?: React.ReactNode;
+  logo?: boolean;
 }
 
-const CenterContainer = (props: ChildrenProps) => {
+const CenterContainer = (props: CenterContainerProps) => {
   //Get location to display or not the button back home.
   const location = useLocation();
   useEffect(() => {
@@ -45,9 +46,12 @@ const CenterContainer = (props: ChildrenProps) => {
       ) : (
         ''
       )}
-      <div className='mx-auto pt-24'>
-        <img className='h-40 mx-auto' alt='Website logo' src={Logo} />
-      </div>
+      {props.logo === true && (
+        <div className='mx-auto pt-24'>
+          <img className='h-40 mx-auto' alt='Website logo' src={Logo} />
+        </div>
+      )}
+      {props.logo === true || <div className='pt-24'></div>}
       <div className='flex-grow flex justify-center'>
         <div className='w-4/5 flex flex-col items-center justify-start'>
           {props.children}
@@ -55,6 +59,10 @@ const CenterContainer = (props: ChildrenProps) => {
       </div>
     </div>
   );
+};
+
+CenterContainer.defaultProps = {
+  logo: true,
 };
 
 export default CenterContainer;
