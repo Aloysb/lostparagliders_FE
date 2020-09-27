@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 
 //React-router
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 //Router Transitions
-import { AnimatedSwitch } from 'react-router-transition';
 import './style/react_router_transition/animatedSwitch.css';
 
 //Tailwind's classNames
@@ -25,12 +24,7 @@ ReactDOM.render(
   <React.StrictMode>
     <GlobalStyle />
     <Router>
-      <AnimatedSwitch
-      // atEnter={{ opacity: 0 }}
-      // atLeave={{ opacity: 0 }}
-      // atActive={{ opacity: 1 }}
-      // className='switch-wrapper'
-      >
+      <Switch>
         <Route exact path='/'>
           <LandingPage />
         </Route>
@@ -40,10 +34,11 @@ ReactDOM.render(
         <Route path='/register'>
           <RegisterStolenGear />
         </Route>
+
         <Route path='/nomatch'>
           <NoMatchPage />
         </Route>
-      </AnimatedSwitch>
+      </Switch>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
