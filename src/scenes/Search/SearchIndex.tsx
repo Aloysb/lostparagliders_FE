@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import { useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 //Spinners
 import { Ring } from 'react-spinners-css';
@@ -32,7 +32,7 @@ const Search = () => {
   };
 
   // Set up navigation hook for react-router.
-  // let history = useHistory();
+  let history = useHistory();
 
   // Query the db.
   const queryDbWithInput = () => {
@@ -43,6 +43,11 @@ const Search = () => {
     } else {
       //If input, query the DB via API path.
       setIsLoading(true);
+
+      //Simulate call to API
+      setTimeout(() => {
+        history.push({ pathname: '/nomatch', state: searchValue });
+      }, 4000);
       //Remove non-alphanumeric character.
       // let slugifiedSearchValue = slugify(searchValue);
 
