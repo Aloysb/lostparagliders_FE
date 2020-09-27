@@ -20,6 +20,7 @@ import Search from './scenes/Search/SearchIndex';
 import RegisterStolenGear from './scenes/RegisterStolenGear/RegisterStolenGear';
 import NoMatchPage from './scenes/NoMatch/NoMatchPage';
 import MatchPage from './scenes/Match/MatchPage';
+import NotMatching from './scenes/NotMatching/NotMatching';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -37,6 +38,9 @@ ReactDOM.render(
         </Route>
         <Route path='/match'>
           <MatchPage />
+        </Route>
+        <Route path='/notmatching'>
+          <NotMatching />
         </Route>
         <Route path='/nomatch'>
           <NoMatchPage />

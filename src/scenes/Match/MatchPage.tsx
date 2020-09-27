@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
+import Button from '../../components/Button/Button';
 import CenterContainer from '../../components/CenterContainer/CenterContainer';
 
 const MatchPage = () => {
@@ -14,59 +15,54 @@ const MatchPage = () => {
         <h2 className='my-3'>
           It looks like this equipment might have been stolen...
         </h2>
-        <h3 className='self-center'>123-ABCDE</h3>
-        <h3 className='mt-4 text-red-700'>
+        <h3 className='self-center'>{serialNumber}</h3>
+        <h3 className='mt-4 text-red-600'>
           A user has registered this equipment as stolen. Don't panic.
         </h3>
-        <h2 className='mt-10 mb-5'>
-          Does the equipment match the description below?
-        </h2>
+        <h2>Does the equipment match the description below?</h2>
       </div>
-      <div className='w-100 flex-grow flex justify-stretch items-start'>
-        <div className='w-4/5 text-white border-2 border-white border-solid p-10 rounded'>
-          <table>
-            <tr>
-              <td>
-                <p>Brand</p>
-              </td>
-              <td>
-                <p>Advance</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>Model</p>
-              </td>
-              <td>
-                <p>Progress 3</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>Colors</p>
-              </td>
-              <td>
-                <p>Red, Black</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>Description</p>
-              </td>
-              <td>
-                <p>Harness from 2018, a few scratches underneath the bum.</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>Stolen</p>
-              </td>
-              <td>
-                <p>24 December 2018 at Lennox Head</p>
-              </td>
-            </tr>
-          </table>
+      <div className='w-2/3 mx-auto flex-grow flex justify-stretch items-start'>
+        <div className='table w-full text-white '>
+          <div className='table-row'>
+            <div className='table-cell p-2 font-bold text-right'>Brand</div>
+            <div className='table-cell p-2'>Advance</div>
+          </div>
+          <div className='table-row'>
+            <div className='table-cell p-2 font-bold text-right'>Model</div>
+            <div className='table-cell p-2'>Progress</div>
+          </div>
+          <div className='table-row'>
+            <div className='table-cell p-2 font-bold text-right'>Colors</div>
+            <div className='table-cell p-2'>Black, Red</div>
+          </div>
+          <div className='table-row'>
+            <div className='table-cell p-2 font-bold text-right'>
+              Description
+            </div>
+            <div className='table-cell p-2'>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
+              expedita praesentium sit dolor cumque consequuntur quibusdam magni
+              iure corrupti, fugiat porro placeat eligendi in! Veritatis
+              quisquam aspernatur eos facilis incidunt.
+            </div>
+          </div>
+          <div className='table-row'>
+            <div className='table-cell p-2 font-bold text-right'>
+              Stolen the
+            </div>
+            <div className='table-cell p-2'>
+              31 December 2018 at Lennox Head, Australia
+            </div>
+          </div>
         </div>
+      </div>
+      <div className='py-8 self-center flex justify-around'>
+        <Button
+          variant='warning'
+          title="No, the item doesn't match."
+          goToRoute='/notmatching'
+        ></Button>
+        <Button variant='success' title='Yes, the item does match.'></Button>
       </div>
     </CenterContainer>
   );

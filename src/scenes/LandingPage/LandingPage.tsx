@@ -19,12 +19,12 @@ const LandingPage = () => {
       <div className='flex flex-col justify-stretch w-3/4 mx-auto max-w-lg'>
         <Button
           title="I'm buying equipment"
-          variant='warning'
+          variant='success'
           goToRoute='/search'
         />
         <Button
           title='My equipment has been stolen'
-          variant='info'
+          variant='warning'
           goToRoute='/register'
         />
       </div>
