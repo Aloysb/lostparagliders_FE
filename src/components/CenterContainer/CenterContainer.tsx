@@ -34,18 +34,18 @@ const CenterContainer = (props: ChildrenProps) => {
               stroke-width='2'
               stroke-linecap='round'
               stroke-linejoin='round'
-              className='feather feather-skip-back mr-2'
+              className='feather feather-skip-back'
             >
               <polygon points='19 20 9 12 19 4 19 20'></polygon>
               <line x1='5' y1='19' x2='5' y2='5'></line>
             </svg>
-            Back home
+            <span className='ml-2 hidden md:block'>Back home</span>
           </Link>
         </div>
       ) : (
         ''
       )}
-      <div className='mx-auto pt-24'>
+      <div className='mx-auto pt-8 md:pt-24'>
         <img className='h-40 mx-auto' alt='Website logo' src={Logo} />
       </div>
       <div className='flex-grow flex justify-center'>

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const StyleInput = styled.input`
   min-height: 3rem;
   max-height: 3rem;
-  min-width: 50vw;
+  width: 100%;
   text-align: center;
   font-size: calc(1rem * 4 / 3);
   color: var(--primary);

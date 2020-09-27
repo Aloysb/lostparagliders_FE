@@ -16,15 +16,15 @@ const LandingPage = () => {
         A website to find out if the paragliding equipment you are buying has
         been stolen or not!
       </h3>
-      <div className='flex flex-col justify-stretch w-3/4 mx-auto max-w-lg'>
+      <div className='flex flex-col justify-stretch w-full md:w-3/4 mx-auto max-w-lg'>
         <Button
           title="I'm buying equipment"
-          variant='warning'
+          variant='success'
           goToRoute='/search'
         />
         <Button
           title='My equipment has been stolen'
-          variant='info'
+          variant='warning'
           goToRoute='/register'
         />
       </div>
