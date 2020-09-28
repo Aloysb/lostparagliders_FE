@@ -84,7 +84,7 @@ const Search = () => {
             ? 'Enter the serial number below to find out!'
             : errorMessage}
         </h3>
-        <div className='flex flex-col content-center py-3 my-3'>
+        <div className='flex flex-col md:w-2/3 w-full items-center py-3 my-3'>
           <SearchInput handleChange={searchValueChange} />
           <div className='self-center my-3'>
             <Button
