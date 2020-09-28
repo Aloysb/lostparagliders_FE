@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 import Button from '../../components/Button/Button';
 import CenterContainer from '../../components/CenterContainer/CenterContainer';
+import DescriptionTable from './components/DescriptionTable/DescriptionTable';
 
 const MatchPage = () => {
   //Get data from last page
