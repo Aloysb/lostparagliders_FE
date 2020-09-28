@@ -51,7 +51,7 @@ const CenterContainer = (props: CenterContainerProps) => {
           <img className='h-40 mx-auto' alt='Website logo' src={Logo} />
         </div>
       )}
-      {props.logo === true || <div className='pt-24'></div>}
+      {props.logo === true || <div className='pt-12'></div>}
       <div className='flex-grow flex justify-center'>
         <div className='w-4/5 flex flex-col items-center justify-start'>
           {props.children}
