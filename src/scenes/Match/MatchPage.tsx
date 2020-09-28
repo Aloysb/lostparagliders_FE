@@ -67,7 +67,11 @@ const MatchPage = () => {
             </div>
           </div>
           <div className=' self-center flex justify-around'>
-            <Button variant='success' title="Ok, let's do this!"></Button>
+            <Button
+              variant='success'
+              title="Ok, let's do this!"
+              goToRoute='/match/register'
+            ></Button>
           </div>
         </div>
       )}

@@ -20,6 +20,7 @@ import Search from './scenes/Search/SearchIndex';
 import RegisterStolenGear from './scenes/RegisterStolenGear/RegisterStolenGear';
 import NoMatchPage from './scenes/NoMatch/NoMatchPage';
 import MatchPage from './scenes/Match/MatchPage';
+import MatchRegisterPage from './scenes/MatchRegister/MatchRegisterPage';
 import NotMatching from './scenes/NotMatching/NotMatching';
 
 ReactDOM.render(
@@ -36,7 +37,10 @@ ReactDOM.render(
         <Route path='/register'>
           <RegisterStolenGear />
         </Route>
-        <Route path='/match'>
+        <Route path='/match/register'>
+          <MatchRegisterPage />
+        </Route>
+        <Route exact path='/match'>
           <MatchPage />
         </Route>
         <Route path='/notmatching'>
