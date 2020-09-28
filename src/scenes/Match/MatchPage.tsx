@@ -14,9 +14,9 @@ const MatchPage = () => {
 
   return (
     <CenterContainer logo={false}>
-      <h2 className='pt-12'>
+      <h1 className='pt-12'>
         It looks like this equipment might have been stolen...
-      </h2>
+      </h1>
       {!isMatching ? (
         <div className='flex flex-col justify-around items-center'>
           <h3 className='mt-4 text-red-600'>
