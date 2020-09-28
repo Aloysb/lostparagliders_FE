@@ -23,39 +23,7 @@ const MatchPage = () => {
         <h2>Does the equipment match the description below?</h2>
       </div>
       <div className='w-2/3 mx-auto flex-grow flex justify-stretch items-start'>
-        <div className='table w-full text-white '>
-          <div className='table-row'>
-            <div className='table-cell p-2 font-bold text-right'>Brand</div>
-            <div className='table-cell p-2'>Advance</div>
-          </div>
-          <div className='table-row'>
-            <div className='table-cell p-2 font-bold text-right'>Model</div>
-            <div className='table-cell p-2'>Progress</div>
-          </div>
-          <div className='table-row'>
-            <div className='table-cell p-2 font-bold text-right'>Colors</div>
-            <div className='table-cell p-2'>Black, Red</div>
-          </div>
-          <div className='table-row'>
-            <div className='table-cell p-2 font-bold text-right'>
-              Description
-            </div>
-            <div className='table-cell p-2'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
-              expedita praesentium sit dolor cumque consequuntur quibusdam magni
-              iure corrupti, fugiat porro placeat eligendi in! Veritatis
-              quisquam aspernatur eos facilis incidunt.
-            </div>
-          </div>
-          <div className='table-row'>
-            <div className='table-cell p-2 font-bold text-right'>
-              Stolen the
-            </div>
-            <div className='table-cell p-2'>
-              31 December 2018 at Lennox Head, Australia
-            </div>
-          </div>
-        </div>
+        <DescriptionTable />
       </div>
       <div className='py-8 self-center flex justify-around'>
         <Button
