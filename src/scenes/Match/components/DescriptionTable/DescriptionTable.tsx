@@ -15,13 +15,15 @@ const DescriptionTable = ({ match }: IMatchEquipment) => {
   return (
     <div className='text-white rounded border-2 border-white border-solid px-4 pb-4 my-4 divide-y'>
       <h3 className=' py-4 flex justify-center items-center'>
-        {match.serialNumber}
+        Does the equipment match the description below ?
       </h3>
       <div className='table w-full'>
         {Object.entries(match).map(([label, value], idx) => {
           return (
             <div key={idx} className='table-row'>
-              <div className='table-cell p-2 font-bold text-right'>{label}</div>
+              <div className='table-cell p-2 font-bold text-right capitalize'>
+                {label}
+              </div>
               <div className='table-cell p-2'>{value}</div>
             </div>
           );
@@ -32,7 +34,7 @@ const DescriptionTable = ({ match }: IMatchEquipment) => {
 };
 
 const exampleMatch = {
-  serialNumber: '123-ABCDE-Test',
+  'serial #': '123-ABCDE-Test',
   brand: 'Advance',
   model: 'Progress',
   colors: 'red, black',

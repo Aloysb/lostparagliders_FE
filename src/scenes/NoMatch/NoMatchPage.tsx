@@ -14,7 +14,8 @@ const NoMatchPage = () => {
   return (
     <CenterContainer>
       <h1 className='display text-center my-5'>
-        No match found for your request! That's good news!
+        No match found for your request!
+        <br /> That's good news!
       </h1>
       <h3 className='text-center mb-12'>{serialNumber}</h3>
       <Button variant='success' goToRoute='/' title='Back home' />

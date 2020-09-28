@@ -48,6 +48,13 @@ const GlobalStyle = createGlobalStyle`
     color: var(--main-dark-1);
     font-size: calc(1rem * 4 / 3);
       }
+
+      p{
+        font-size: 1rem;
+        color: var(----main-light-2);
+        line-height: 150%;
+        letter-spacing:0.015em;
+      }
 `;
 
 export default GlobalStyle;
