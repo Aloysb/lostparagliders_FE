@@ -26,7 +26,7 @@ const NoMatchPage = React.lazy(() => import('./scenes/NoMatch/NoMatchPage'));
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyle />
-    <Router basename='/'>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Suspense fallback={<div>Loading...</div>}>
           <Route exact path='/'>
