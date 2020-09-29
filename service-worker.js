@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/lostparagliders_FE/precache-manifest.658be533347cd653da740b4af6bb5804.js"
+  "/lostparagliders_FE/precache-manifest.6d2b0f2a5c56693d1264591432e69812.js"
 );
 
 self.addEventListener('message', (event) => {
