@@ -25,6 +25,10 @@ const RegisterStolenGear = React.lazy(() =>
   import('./scenes/RegisterStolenGear/RegisterStolenGear')
 );
 const NoMatchPage = React.lazy(() => import('./scenes/NoMatch/NoMatchPage'));
+const MatchPage = React.lazy(() => import('./scenes/Match/MatchPage'));
+const MatchRegisterPage = React.lazy(() =>
+  import('./scenes/MatchRegister/MatchRegisterPage')
+);
 
 ReactDOM.render(
   <React.StrictMode>
@@ -43,6 +47,12 @@ ReactDOM.render(
           </Route>
           <Route path='/nomatch'>
             <NoMatchPage />
+          </Route>
+          <Route exact path='/match'>
+            <MatchPage />
+          </Route>
+          <Route path='/match/register'>
+            <MatchRegisterPage />
           </Route>
         </Suspense>
       </Switch>
