@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/lostparagliders_FE/static/css/main.b1807335.chunk.css",
-    "main.js": "/lostparagliders_FE/static/js/main.59c9ead3.chunk.js",
-    "main.js.map": "/lostparagliders_FE/static/js/main.59c9ead3.chunk.js.map",
+    "main.js": "/lostparagliders_FE/static/js/main.e2658a0b.chunk.js",
+    "main.js.map": "/lostparagliders_FE/static/js/main.e2658a0b.chunk.js.map",
     "runtime-main.js": "/lostparagliders_FE/static/js/runtime-main.b53ae5ae.js",
     "runtime-main.js.map": "/lostparagliders_FE/static/js/runtime-main.b53ae5ae.js.map",
     "static/css/2.17c96133.chunk.css": "/lostparagliders_FE/static/css/2.17c96133.chunk.css",
@@ -15,7 +15,7 @@
     "static/js/5.b3daad4f.chunk.js": "/lostparagliders_FE/static/js/5.b3daad4f.chunk.js",
     "static/js/5.b3daad4f.chunk.js.map": "/lostparagliders_FE/static/js/5.b3daad4f.chunk.js.map",
     "index.html": "/lostparagliders_FE/index.html",
-    "precache-manifest.6d2b0f2a5c56693d1264591432e69812.js": "/lostparagliders_FE/precache-manifest.6d2b0f2a5c56693d1264591432e69812.js",
+    "precache-manifest.788d37c51ffd8bb4c8563178dce794ca.js": "/lostparagliders_FE/precache-manifest.788d37c51ffd8bb4c8563178dce794ca.js",
     "service-worker.js": "/lostparagliders_FE/service-worker.js",
     "static/css/2.17c96133.chunk.css.map": "/lostparagliders_FE/static/css/2.17c96133.chunk.css.map",
     "static/css/main.b1807335.chunk.css.map": "/lostparagliders_FE/static/css/main.b1807335.chunk.css.map",
@@ -27,6 +27,6 @@
     "static/css/2.17c96133.chunk.css",
     "static/js/2.19536d4e.chunk.js",
     "static/css/main.b1807335.chunk.css",
-    "static/js/main.59c9ead3.chunk.js"
+    "static/js/main.e2658a0b.chunk.js"
   ]
 }

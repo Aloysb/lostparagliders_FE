@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8d841061efaee68a795d94cf2a609210",
+    "revision": "993f0f2128ce72558fffe480a1b0bbe4",
     "url": "/lostparagliders_FE/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lostparagliders_FE/static/css/2.17c96133.chunk.css"
   },
   {
-    "revision": "85a6228ddcf58f8d1cdb",
+    "revision": "b6a52c498c04042a2203",
     "url": "/lostparagliders_FE/static/css/main.b1807335.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lostparagliders_FE/static/js/5.b3daad4f.chunk.js"
   },
   {
-    "revision": "85a6228ddcf58f8d1cdb",
-    "url": "/lostparagliders_FE/static/js/main.59c9ead3.chunk.js"
+    "revision": "b6a52c498c04042a2203",
+    "url": "/lostparagliders_FE/static/js/main.e2658a0b.chunk.js"
   },
   {
     "revision": "9fea643f3f76b3bac640",
