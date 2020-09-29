@@ -2,6 +2,9 @@ import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 
+//Import font via npm to avoid deployment issues.
+import 'fontsource-mulish';
+
 //React-router
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
