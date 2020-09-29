@@ -22,7 +22,12 @@ const GlobalStyle = createGlobalStyle`
     background: linear-gradient(to bottom, var(--main-dark-2), #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
+  body:not(.display){
+    font-family: 'Mulish';
+  }
+
   .display{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     color: var(--main-light-1);
     font-size: calc(1rem * 3.16);
     line-height: 110%;
@@ -31,27 +36,23 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1{
-    font-family: 'Mulish';
     color: var(--main-light-1);
     font-size: calc(1rem * 2.37);
     line-height: 115%;
   }
 
   h2{
-    font-family: 'Mulish';
     color: var(--main);
     font-size: calc(1rem * 1.77);
     line-height: 120%;
   }
 
   h3{
-    font-family: 'Mulish';
     color: var(--main-dark-1);
     font-size: calc(1rem * 1.33);
   }
 
   p{
-    font-family: 'Mulish';
     color: var(--main-light-1);
     line-height: 150%;
     letter-spacing: 0.025em;
