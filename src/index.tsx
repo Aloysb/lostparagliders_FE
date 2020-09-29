@@ -31,7 +31,7 @@ ReactDOM.render(
     <GlobalStyle />
     <Router basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div className='min-h-screen'>Loading...</div>}>
           <Route exact path='/'>
             <LandingPage />
           </Route>
