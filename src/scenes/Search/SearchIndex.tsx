@@ -46,7 +46,11 @@ const Search = () => {
 
       //Simulate call to API
       setTimeout(() => {
-        history.push({ pathname: '/nomatch', state: searchValue });
+        if (searchValue === 'match') {
+          history.push({ pathname: '/match', state: searchValue });
+        } else if (searchValue !== 'match') {
+          history.push({ pathname: '/nomatch', state: searchValue });
+        }
       }, 4000);
       //Remove non-alphanumeric character.
       // let slugifiedSearchValue = slugify(searchValue);

@@ -93,7 +93,7 @@ export const Button = (props: ButtonProps) => {
 // Default props for the component
 Button.defaultProps = {
   title: 'Button',
-  variant: 'Primary',
+  variant: 'primary',
   goToRoute: '',
   actionOnClick: '',
   isLoading: false,

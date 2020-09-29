@@ -16,6 +16,7 @@ import GlobalStyle from './style/styled_components/globalStyle';
 
 //Import scenes
 import LandingPage from './scenes/LandingPage/LandingPage';
+
 const Search = React.lazy(() => import('./scenes/Search/SearchIndex'));
 const RegisterStolenGear = React.lazy(() =>
   import('./scenes/RegisterStolenGear/RegisterStolenGear')

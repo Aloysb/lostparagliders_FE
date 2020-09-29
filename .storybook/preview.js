@@ -4,10 +4,10 @@ import GlobalStyle from '../src/style/styled_components/globalStyle';
 
 export const decorators = [
   (Story) => (
-    <>
+    <div style={{height: 100vh}} >
       <GlobalStyle />
       <Story />
-    </>
+    </div>
   ),
 ];
 

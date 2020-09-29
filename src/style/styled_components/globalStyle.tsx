@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
 
   .display{
     color: var(--main-light-1);
-    /* font-size: calc(1rem * 4 / 3 * 4); */
+    font-size: calc(1rem * 256 / 81);
     line-height: 110%;
     font-weight: 200;
     letter-spacing: -0.025em;
@@ -34,20 +34,27 @@ const GlobalStyle = createGlobalStyle`
 
   h1{
     color: var(--main-light-1);
-    font-size: calc(1rem * 4 / 3 * 3);
+    font-size: calc(1rem * 64 / 27);
     line-height: 115%;
   }
 
   h2{
     color: var(--main);
-    font-size: calc(1rem * 4 / 3 * 2);
+    font-size: calc(1rem * 16 / 9) ;
     line-height: 120%;
   }
 
   h3{
     color: var(--main-dark-1);
-    font-size: calc(1rem * 4 / 3 * 1);
-  }
+    font-size: calc(1rem * 4 / 3);
+      }
+
+      p{
+        font-size: 1rem;
+        color: var(----main-light-2);
+        line-height: 150%;
+        letter-spacing:0.015em;
+      }
 `;
 
 export default GlobalStyle;
