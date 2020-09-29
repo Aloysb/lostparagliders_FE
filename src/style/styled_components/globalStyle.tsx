@@ -18,35 +18,46 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
   }
   body {
-    font-family: 'Mulish';
     background: var(--main-dark-2);
     background: linear-gradient(to bottom, var(--main-dark-2), #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
   .display{
     color: var(--main-light-1);
-    /* font-size: calc(1rem * 4 / 3 * 4); */
+    font-size: calc(1rem * 3.16);
     line-height: 110%;
     font-weight: 200;
     letter-spacing: -0.025em;
   }
 
   h1{
+    font-family: 'Mulish';
     color: var(--main-light-1);
-    font-size: calc(1rem * 4 / 3 * 3);
+    font-size: calc(1rem * 2.37);
     line-height: 115%;
   }
 
   h2{
+    font-family: 'Mulish';
     color: var(--main);
-    font-size: calc(1rem * 4 / 3 * 2);
+    font-size: calc(1rem * 1.77);
     line-height: 120%;
   }
 
   h3{
+    font-family: 'Mulish';
     color: var(--main-dark-1);
-    font-size: calc(1rem * 4 / 3 * 1);
+    font-size: calc(1rem * 1.33);
   }
+
+  p{
+    font-family: 'Mulish';
+    color: var(--main-light-1);
+    line-height: 150%;
+    letter-spacing: 0.025em;
+  }
+
+
 `;
 
 export default GlobalStyle;
