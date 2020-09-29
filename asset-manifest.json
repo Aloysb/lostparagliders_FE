@@ -1,25 +1,31 @@
 {
   "files": {
     "main.css": "/lostparagliders_FE/static/css/main.b1807335.chunk.css",
-    "main.js": "/lostparagliders_FE/static/js/main.69c01985.chunk.js",
-    "main.js.map": "/lostparagliders_FE/static/js/main.69c01985.chunk.js.map",
-    "runtime-main.js": "/lostparagliders_FE/static/js/runtime-main.b995ab88.js",
-    "runtime-main.js.map": "/lostparagliders_FE/static/js/runtime-main.b995ab88.js.map",
+    "main.js": "/lostparagliders_FE/static/js/main.3a5794e9.chunk.js",
+    "main.js.map": "/lostparagliders_FE/static/js/main.3a5794e9.chunk.js.map",
+    "runtime-main.js": "/lostparagliders_FE/static/js/runtime-main.d444ed73.js",
+    "runtime-main.js.map": "/lostparagliders_FE/static/js/runtime-main.d444ed73.js.map",
     "static/css/2.079ed09a.chunk.css": "/lostparagliders_FE/static/css/2.079ed09a.chunk.css",
-    "static/js/2.5fccd8b3.chunk.js": "/lostparagliders_FE/static/js/2.5fccd8b3.chunk.js",
-    "static/js/2.5fccd8b3.chunk.js.map": "/lostparagliders_FE/static/js/2.5fccd8b3.chunk.js.map",
+    "static/js/2.66be4106.chunk.js": "/lostparagliders_FE/static/js/2.66be4106.chunk.js",
+    "static/js/2.66be4106.chunk.js.map": "/lostparagliders_FE/static/js/2.66be4106.chunk.js.map",
+    "static/js/3.e51cf637.chunk.js": "/lostparagliders_FE/static/js/3.e51cf637.chunk.js",
+    "static/js/3.e51cf637.chunk.js.map": "/lostparagliders_FE/static/js/3.e51cf637.chunk.js.map",
+    "static/js/4.f881f83f.chunk.js": "/lostparagliders_FE/static/js/4.f881f83f.chunk.js",
+    "static/js/4.f881f83f.chunk.js.map": "/lostparagliders_FE/static/js/4.f881f83f.chunk.js.map",
+    "static/js/5.6c07505c.chunk.js": "/lostparagliders_FE/static/js/5.6c07505c.chunk.js",
+    "static/js/5.6c07505c.chunk.js.map": "/lostparagliders_FE/static/js/5.6c07505c.chunk.js.map",
     "index.html": "/lostparagliders_FE/index.html",
-    "precache-manifest.fb8a977a862ce5802f62fc4c3cc3fdd0.js": "/lostparagliders_FE/precache-manifest.fb8a977a862ce5802f62fc4c3cc3fdd0.js",
+    "precache-manifest.5e5b7b46110014fcd8c8b804fcb2ee4e.js": "/lostparagliders_FE/precache-manifest.5e5b7b46110014fcd8c8b804fcb2ee4e.js",
     "service-worker.js": "/lostparagliders_FE/service-worker.js",
     "static/css/2.079ed09a.chunk.css.map": "/lostparagliders_FE/static/css/2.079ed09a.chunk.css.map",
     "static/css/main.b1807335.chunk.css.map": "/lostparagliders_FE/static/css/main.b1807335.chunk.css.map",
-    "static/js/2.5fccd8b3.chunk.js.LICENSE.txt": "/lostparagliders_FE/static/js/2.5fccd8b3.chunk.js.LICENSE.txt"
+    "static/js/2.66be4106.chunk.js.LICENSE.txt": "/lostparagliders_FE/static/js/2.66be4106.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b995ab88.js",
+    "static/js/runtime-main.d444ed73.js",
     "static/css/2.079ed09a.chunk.css",
-    "static/js/2.5fccd8b3.chunk.js",
+    "static/js/2.66be4106.chunk.js",
     "static/css/main.b1807335.chunk.css",
-    "static/js/main.69c01985.chunk.js"
+    "static/js/main.3a5794e9.chunk.js"
   ]
 }
