@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 
@@ -16,39 +16,32 @@ import GlobalStyle from './style/styled_components/globalStyle';
 
 //Import scenes
 import LandingPage from './scenes/LandingPage/LandingPage';
-import Search from './scenes/Search/SearchIndex';
-import RegisterStolenGear from './scenes/RegisterStolenGear/RegisterStolenGear';
-import NoMatchPage from './scenes/NoMatch/NoMatchPage';
-import MatchPage from './scenes/Match/MatchPage';
-import MatchRegisterPage from './scenes/MatchRegister/MatchRegisterPage';
-import NotMatching from './scenes/NotMatching/NotMatching';
+
+const Search = React.lazy(() => import('./scenes/Search/SearchIndex'));
+const RegisterStolenGear = React.lazy(() =>
+  import('./scenes/RegisterStolenGear/RegisterStolenGear')
+);
+const NoMatchPage = React.lazy(() => import('./scenes/NoMatch/NoMatchPage'));
 
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyle />
     <Router>
       <Switch>
-        <Route exact path='/'>
-          <LandingPage />
-        </Route>
-        <Route path='/search'>
-          <Search />
-        </Route>
-        <Route path='/register'>
-          <RegisterStolenGear />
-        </Route>
-        <Route path='/match/register'>
-          <MatchRegisterPage />
-        </Route>
-        <Route exact path='/match'>
-          <MatchPage />
-        </Route>
-        <Route path='/notmatching'>
-          <NotMatching />
-        </Route>
-        <Route path='/nomatch'>
-          <NoMatchPage />
-        </Route>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Route exact path='/'>
+            <LandingPage />
+          </Route>
+          <Route path='/search'>
+            <Search />
+          </Route>
+          <Route path='/register'>
+            <RegisterStolenGear />
+          </Route>
+          <Route path='/nomatch'>
+            <NoMatchPage />
+          </Route>
+        </Suspense>
       </Switch>
     </Router>
   </React.StrictMode>,
