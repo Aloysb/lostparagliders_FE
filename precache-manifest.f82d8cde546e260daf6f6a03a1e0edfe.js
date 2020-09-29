@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1da5496df6bbd1a91683f0f078bfba1e",
+    "revision": "850d4a252e53204a8cafe1da66399764",
     "url": "/lostparagliders_FE/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lostparagliders_FE/static/css/2.17c96133.chunk.css"
   },
   {
-    "revision": "065bfe62b5295923d91e",
+    "revision": "81188898d50cfa198678",
     "url": "/lostparagliders_FE/static/css/main.b1807335.chunk.css"
   },
   {
@@ -20,32 +20,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lostparagliders_FE/static/js/2.51b6fbab.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "185122c65d94ddd9c87d",
-    "url": "/lostparagliders_FE/static/js/3.1e60a92e.chunk.js"
+    "revision": "cb5c0ec65188aea2c76f",
+    "url": "/lostparagliders_FE/static/js/3.7dee491d.chunk.js"
   },
   {
-    "revision": "22e9e2e84e6ab4d7bf7c",
-    "url": "/lostparagliders_FE/static/js/4.4fbcfc3e.chunk.js"
+    "revision": "11cc08871144f4ef877a",
+    "url": "/lostparagliders_FE/static/js/4.ac1603f8.chunk.js"
   },
   {
-    "revision": "7efee698809f0596d63f",
-    "url": "/lostparagliders_FE/static/js/5.d9cd80c4.chunk.js"
+    "revision": "71b60220749eac4ed1c7",
+    "url": "/lostparagliders_FE/static/js/5.5f465bff.chunk.js"
   },
   {
     "revision": "768e5dbdb791e603459a",
     "url": "/lostparagliders_FE/static/js/6.28b9ff19.chunk.js"
   },
   {
-    "revision": "b041d4dff9df74f84fbd",
-    "url": "/lostparagliders_FE/static/js/7.c78a7764.chunk.js"
+    "revision": "8fb3987f42b6b0161960",
+    "url": "/lostparagliders_FE/static/js/7.8d0bee84.chunk.js"
   },
   {
-    "revision": "065bfe62b5295923d91e",
-    "url": "/lostparagliders_FE/static/js/main.2c974e15.chunk.js"
+    "revision": "efa8990e67101e8132c1",
+    "url": "/lostparagliders_FE/static/js/8.d8c9e122.chunk.js"
   },
   {
-    "revision": "b716a4166347ece5de05",
-    "url": "/lostparagliders_FE/static/js/runtime-main.fb268d31.js"
+    "revision": "81188898d50cfa198678",
+    "url": "/lostparagliders_FE/static/js/main.fa23141a.chunk.js"
+  },
+  {
+    "revision": "ad3f78ddf4eaee041503",
+    "url": "/lostparagliders_FE/static/js/runtime-main.18c0f38f.js"
   },
   {
     "revision": "018ef3ae99a585ca288b12fb99527299",

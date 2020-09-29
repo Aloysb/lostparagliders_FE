@@ -1,0 +1,2 @@
+(this.webpackJsonplostparagliders=this.webpackJsonplostparagliders||[]).push([[7],{79:function(e,t,a){"use strict";a.r(t);var s=a(0),l=a.n(s),n=a(1),r=a(15),c=a(20);t.default=function(){var e=Object(n.g)().state;return l.a.createElement(c.a,null,l.a.createElement("h1",{className:"display text-center my-5"},"All good then! ",l.a.createElement("br",null)," This equipment is safe to buy!"),l.a.createElement("h3",{className:"text-center mb-12"},e),l.a.createElement(r.a,{variant:"success",goToRoute:"/",title:"Back home"}))}}}]);
+//# sourceMappingURL=7.8d0bee84.chunk.js.map
