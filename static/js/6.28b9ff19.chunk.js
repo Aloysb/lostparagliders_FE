@@ -1,0 +1,2 @@
+(this.webpackJsonplostparagliders=this.webpackJsonplostparagliders||[]).push([[6],{78:function(e,t,a){"use strict";a.r(t);var s=a(0),r=a.n(s),n=a(1),c=a(15),l=a(20);t.default=function(){var e=Object(n.g)().state;return r.a.createElement(l.a,null,r.a.createElement("h1",{className:"display text-center my-5"},"No match found for your request!",r.a.createElement("br",null)," That's good news!"),r.a.createElement("h3",{className:"text-center mb-12"},e),r.a.createElement(c.a,{variant:"success",goToRoute:"/",title:"Back home"}))}}}]);
+//# sourceMappingURL=6.28b9ff19.chunk.js.map

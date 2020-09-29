@@ -1,2 +1,0 @@
-(this.webpackJsonplostparagliders=this.webpackJsonplostparagliders||[]).push([[4],{76:function(e,t,a){"use strict";a.r(t);var n=a(0),s=a.n(n),r=a(20);t.default=function(){return s.a.createElement(r.a,null,s.a.createElement("h1",{className:"display text-center mt-12"},"Page under construction."),s.a.createElement("h3",{className:"text-center mt-6"},"We're working hard to get this tool online soon! Come back to us shortly \ud83d\ude03"))}}}]);
-//# sourceMappingURL=4.6de402b2.chunk.js.map
